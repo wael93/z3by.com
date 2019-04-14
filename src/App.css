@@ -8,6 +8,21 @@
   pointer-events: none;
 }
 
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #61dafb;
+}
+
+h3 {
+  color: #71facb;
+  font-size: 25px;
+  font-weight: 400;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -21,13 +36,17 @@
 
 .App-link {
   color: #61dafb;
+  font-size: 100px;
+  text-decoration: none;
+  font-weight: 700;
+  border: 2px #61dafb solid;
+  padding: 20px 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link:hover {
+  color: #71facb;
+  border: 2px #71facb solid;
+  transform: scale(1.1);
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+
 }
