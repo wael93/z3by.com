@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 export default function Nav() {
   return (
@@ -7,9 +8,9 @@ export default function Nav() {
       id="ftco-navbar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <Link class="navbar-brand" to='/'>
           Z3BY
-        </a>
+        </Link>
         <button
           class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
           type="button"
@@ -25,34 +26,34 @@ export default function Nav() {
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav nav ml-auto">
             <li class="nav-item">
-              <a href="#home-section" class="nav-link">
+              <Link to='/' class="nav-link">
                 <span>Home</span>
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="#about-section" class="nav-link">
+              <Link to='/about/' class="nav-link">
                 <span>About</span>
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="#skills-section" class="nav-link">
+              <Link to='/skills/' class="nav-link">
                 <span>Skills</span>
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="#projects-section" class="nav-link">
+              <Link to='/projects/' class="nav-link">
                 <span>Projects</span>
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="#blog-section" class="nav-link">
+              <Link to='/blog' class="nav-link">
                 <span>My Blog</span>
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a href="#contact-section" class="nav-link">
+              <Link to='/contact' class="nav-link">
                 <span>Contact</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

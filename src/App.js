@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './style.scss';
-import Main from './components/Main'
+import Router from './Router/Router'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Main></Main>
+        <Router>
+
+        </Router>
       </div>
     );
   }
