@@ -5,15 +5,15 @@ import paths from "../Router/Paths";
 export default function Nav() {
   return (
     <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
+      className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
       id="ftco-navbar"
     >
-      <div class="container">
-        <Link class="navbar-brand" to="/">
+      <div className="container">
+        <Link className="navbar-brand" to='/home'>
           Z3BY
         </Link>
         <button
-          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
+          className="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
           type="button"
           data-toggle="collapse"
           data-target="#ftco-nav"
@@ -21,14 +21,14 @@ export default function Nav() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="oi oi-menu" /> Menu
+          <span className="oi oi-menu" /> Menu
         </button>
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
+        <div className="collapse navbar-collapse" id="ftco-nav">
+          <ul className="navbar-nav nav ml-auto">
             {paths.map((path, i) => (
-              <li class="nav-item">
-                <Link to={path.path} class="nav-link">
+              <li className="nav-item">
+                <Link to={path.path} className="nav-link">
                   <span>{path.name}</span>
                 </Link>
               </li>
