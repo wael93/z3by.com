@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import paths from "../Router/Paths";
 
 export default function Nav() {
   return (
@@ -8,7 +9,7 @@ export default function Nav() {
       id="ftco-navbar"
     >
       <div class="container">
-        <Link class="navbar-brand" to='/'>
+        <Link class="navbar-brand" to="/">
           Z3BY
         </Link>
         <button
@@ -25,36 +26,13 @@ export default function Nav() {
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item">
-              <Link to='/' class="nav-link">
-                <span>Home</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to='/about/' class="nav-link">
-                <span>About</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to='/skills/' class="nav-link">
-                <span>Skills</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to='/projects/' class="nav-link">
-                <span>Projects</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to='/blog' class="nav-link">
-                <span>My Blog</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to='/contact' class="nav-link">
-                <span>Contact</span>
-              </Link>
-            </li>
+            {paths.map((path, i) => (
+              <li class="nav-item">
+                <Link to={path.path} class="nav-link">
+                  <span>{path.name}</span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

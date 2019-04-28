@@ -1,28 +1,39 @@
 import Home from "../components/Home";
+import About from "../components/About";
+import Blog from "../components/Blog";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 
 export default [
     {
-        path: '',
+        path: '/home',
+        name: 'Home',
         component: Home
     },
     {
-        path: 'about/',
-        component: Home
+        path: '/about',
+        name: 'About',
+        component: About
     },
     {
-        path: 'skills/',
-        component: Home
+        path: '/skills',
+        name: 'Skills',
+        component: Skills
     },
     {
-        path: 'projects/',
-        component: Home
+        path: '/projects',
+        name: 'Projects',
+        component: Projects
     },
     {
-        path: 'blog/',
-        component: Home
+        path: '/blog',
+        name: 'Blog',
+        component: Blog
     },
     {
-        path: 'contact/',
-        component: Home
+        path: '/contact',
+        name: 'Contact',
+        component: Contact
     }
 ]
