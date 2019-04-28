@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Blog() {
   return (
-    <div>
+    <section className='container'>    
       <h1>hello Blog</h1>
-    </div>
+    </section>
   )
 }

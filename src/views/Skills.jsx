@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Skills() {
   return (
-    <div>
+    <section className="container">
       <h1>hello Skills</h1>
-    </div>
-  )
+    </section>
+  );
 }

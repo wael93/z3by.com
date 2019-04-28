@@ -27,7 +27,7 @@ export default function Nav() {
         <div className="collapse navbar-collapse" id="ftco-nav">
           <ul className="navbar-nav nav ml-auto">
             {paths.map((path, i) => (
-              <li className="nav-item">
+              <li className="nav-item" key={i}>
                 <Link to={path.path} className="nav-link">
                   <span>{path.name}</span>
                 </Link>

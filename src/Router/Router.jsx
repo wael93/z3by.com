@@ -9,7 +9,7 @@ export default function Router() {
       <Nav />
 
       {Paths.map((path, i) => (
-        <Route path={path.path} component={path.component} name={path.name} />
+        <Route path={path.path} component={path.component} name={path.name} key={i}/>
       ))}
     </BrowserRouter>
   );
