@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Projects() {
   return (
-    <section className='container'>
-      <h1>hello Projects</h1>
+    <section className='zoomIn'>
+      <h1 className='text-center'>hello Projects</h1>
     </section>
   )
 }
